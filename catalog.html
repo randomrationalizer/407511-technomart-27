@@ -53,6 +53,13 @@
         <h2>Фильтр каталога</h2>
         <form action="http://foo.com" method="GET">
           <fieldset>
+            <legend>Цена:</legend>
+            <span></span>
+            <input type="number" id="price_min" name="min-price" value="0">
+            <input type="number" id="price_max" name="max-price" value="30000">
+          </fieldset>
+          <fieldset>
+            <legend>Производители:</legend>
             <input type="checkbox" id="brand_1" name="brand-bosch" value="bosch">
             <label for="brand_1">BOSCH</label>
             <input type="checkbox" id="brand_2" name="brand-interskol" value="interskol">
@@ -65,6 +72,7 @@
             <label for="brand_1">Hitachi</label>
           </fieldset>
           <fieldset>
+            <legend>Питание:</legend>
             <input type="radio" id="power_1" name="power-type" value="battery">
             <label for="power_1">Аккумуляторные</label>
             <input type="radio" id="power_2" name="power-type" value="network">
@@ -72,6 +80,19 @@
           </fieldset>
           <button type="submit">Показать</button>
         </form>
+      </section>
+
+      <section>
+        <h2>Сортировка:</h2>
+        <div>
+          <a href="">По цене</a>
+          <a href="">По типу</a>
+          <a href="">По функционалу</a>
+        </div>
+        <div>
+          <a href="">По возрастанию</a>
+          <a href="">По убыванию</a>
+        </div>
       </section>
 
       <section>
