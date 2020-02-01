@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta description="Интернет-магазин Техномарт: всё от гвоздя до BFG">
-    <title>Техномарт</title>
+    <title>Интернет-магазин инструмента и стройматериалов Техномарт</title>
   </head>
   <body>
     <header>
@@ -24,6 +24,16 @@
           <li><a href="">Доставка</a></li>
           <li><a href="">Контакты</a></li>
         </ul>
+        <ul class="visually-hidden">
+          <li><a href="">Войти</a></li>
+          <li><a href="">Регистрация</a></li>
+        </ul>
+        <ul>
+          <li><a href="">Равшан Джамшутович</a></li>
+          <li><a href="">Выйти</a></li>
+          <li><a href="">Мои заказы</a></li>
+          <li><a href="">Личный кабинет</a></li>
+        </ul>
       </nav>
       <p>
         <i>Интернет-магазин
@@ -34,16 +44,6 @@
         <span>+7 (812) 555-05-55</span>
         <span>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</span>
       </p>
-      <ul class="visually-hidden">
-        <li><a href="">Войти</a></li>
-        <li><a href="">Регистрация</a></li>
-      </ul>
-      <ul>
-        <li><a href="">Равшан Джамшутович</a></li>
-        <li><a href="">Выйти</a></li>
-        <li><a href="">Мои заказы</a></li>
-        <li><a href="">Личный кабинет</a></li>
-      </ul>
     </header>
 
     <main>
@@ -56,8 +56,8 @@
       </ul>
 
       <section>
-        <h2>Фильтр каталога</h2>
-        <form action="http://foo.com" method="GET">
+        <h2>Фильтр:</h2>
+        <form action="https://echo.htmlacademy.ru" method="get">
           <fieldset>
             <legend>Цена:</legend>
             <span></span>
@@ -66,23 +66,23 @@
           </fieldset>
           <fieldset>
             <legend>Производители:</legend>
-            <input type="checkbox" id="brand_1" name="brand-bosch" value="bosch">
-            <label for="brand_1">BOSCH</label>
-            <input type="checkbox" id="brand_2" name="brand-interskol" value="interskol">
-            <label for="brand_1">Интрерскол</label>
-            <input type="checkbox" id="brand_3" name="brand-makita" value="makita">
-            <label for="brand_1">Makita</label>
-            <input type="checkbox" id="brand_4" name="brand-dewalt" value="dewalt">
-            <label for="brand_1">DeWALT</label>
-            <input type="checkbox" id="brand_5" name="brand-hitachi" value="hitachi">
-            <label for="brand_1">Hitachi</label>
+            <input type="checkbox" id="filter-bosch" name="brand-bosch" checked>
+            <label for="filter-bosch">BOSCH</label>
+            <input type="checkbox" id="filter-interskol" name="brand-interskol">
+            <label for="filter-interskol">Интрерскол</label>
+            <input type="checkbox" id="filter-makita" name="brand-makita" checked>
+            <label for="filter-makita">Makita</label>
+            <input type="checkbox" id="filter-dewalt" name="brand-dewalt">
+            <label for="filter-dewalt">DeWALT</label>
+            <input type="checkbox" id="filter-hitachi" name="brand-hitachi">
+            <label for="filter-hitachi">Hitachi</label>
           </fieldset>
           <fieldset>
             <legend>Питание:</legend>
-            <input type="radio" id="power_1" name="power-type" value="battery">
-            <label for="power_1">Аккумуляторные</label>
-            <input type="radio" id="power_2" name="power-type" value="network">
-            <label for="power_2">Сетевые</label>
+            <input type="radio" id="filter-battery" name="power-type" value="battery">
+            <label for="filter-battery">Аккумуляторные</label>
+            <input type="radio" id="filter-network" name="power-type" value="network">
+            <label for="filter-network">Сетевые</label>
           </fieldset>
           <button type="submit">Показать</button>
         </form>
@@ -90,19 +90,19 @@
 
       <section>
         <h2>Сортировка:</h2>
-        <div>
-          <a href="">По цене</a>
-          <a href="">По типу</a>
-          <a href="">По функционалу</a>
-        </div>
-        <div>
-          <a href="">По возрастанию</a>
-          <a href="">По убыванию</a>
-        </div>
+        <ul>
+          <li><a href="">По цене</a></li>
+          <li><a href="">По типу</a></li>
+          <li><a href="">По функционалу</a></li>
+        </ul>
+        <ul>
+          <li><a href="">По возрастанию</a></li>
+          <li></li><a href="">По убыванию</a></li>
+        </ul>
       </section>
 
       <section>
-        <h2>Товары из категории Перфораторы</h2>
+        <h2 class="visually-hidden">Товары из категории Перфораторы</h2>
         <ul>
           <li>
             <article>
