@@ -1,0 +1,268 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 13px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #000000;
+
+  background-color: #ffffff;
+}
+
+a {
+  text-decoration: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.modal {
+  display: none;
+}
+
+.main-header {
+  font-family: "Cuprum", "Arial", sans-serif;
+  background-color: #f4f7f9;
+}
+
+.site-navigation,
+.user-navigation {
+  list-style: none;
+}
+
+.site-navigation {
+  font-size: 17px;
+  line-height: 17px;
+  color: #ffffff;
+
+  background-color: #32425c;
+}
+
+.site-functions {
+  font-size: 17px;
+  line-height: 18px;
+  color: #ffffff;
+
+  background-color: #293449;
+}
+
+.site-navigation a,
+.site-functions a {
+  color: #ffffff;
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus {
+  background-color: #293449;
+}
+
+.site-navigation a:active {
+  color: rgba(255, 255, 255, 0.5);
+
+  background-color: #1d2739;
+}
+
+.site-functions a:hover,
+.site-functions a:focus {
+  background-color: #212a3a;
+}
+
+.site-functions a:active {
+  color: rgba(255, 255, 255, 0.6);
+
+  background-color: #161d29;
+}
+
+.site-functions .order-link {
+  background-color: #63a63e;
+}
+
+.site-functions .order-link:hover,
+.site-functions .order-link:focus {
+  background-color: #5fbb2d;
+}
+
+.site-functions .order-link:active {
+  color: rgba(255, 255, 255, 0.5);
+
+  background-color: #518534;
+}
+
+.site-search input {
+  color: #ffffff;
+
+  background-color: #293449;
+  border: none;
+}
+
+.site-search input:hover {
+  background-color: #212a3a;
+}
+
+.site-search input:focus,
+.site-search input:active {
+  color: #000000;
+  
+  background-color: #ffffff;
+}
+
+.user-navigation a {
+  font-size: 21px;
+  line-height: 21px;
+  color: #000000;
+
+  background-color: #ffffff;
+}
+
+.user-navigation a:hover,
+.user-navigation a:focus {
+  color: #ee3643;
+}
+
+.user-navigation a:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.cart-not-empty {
+  background-color: #ee3643;
+}
+
+.user-navigation .user-name {
+  font-size: 21px;
+  line-height: 21px;
+  color: #000000;
+
+  background-color: #ffffff;
+}
+
+.user-navigation .user-name:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.user-navigation .user-orders-link,
+.user-navigation .user-profile-link {
+  font-size: 16px;
+  line-height: 18px;
+  color: #32425c;
+  text-decoration: underline;
+
+  background-color: transparent;
+}
+
+.user-navigation .user-orders-link:active,
+.user-navigation .user-profile-link:active {
+  color: rgba(50, 66, 92, 0.3);
+}
+
+.main-header-message {
+  font-size: 16px;
+  line-height: 23px;
+  font-style: italic;
+  color: #ee3643;
+}
+
+.main-header-contacts .phone {
+  font-size: 21px;
+  line-height: 21px;
+  color: #ee3643;
+}
+
+.main-header-contacts .address {
+  font-size: 14px;
+  line-height: 24px;
+  color: #32425c;
+}
+
+.main-footer {
+  font-family: "Cuprum", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  color: #f1f5f7;
+
+  background-color: #32425c;
+}
+
+.footer-contacts {
+  color: #f3f7f9;
+}
+
+.footer-navigation,
+.footer-sectons-list,
+.footer-social {
+  list-style: none;
+}
+
+.footer-navigation a {
+  color: #f1f5f7;
+}
+
+.footer-sectons-list a {
+  color: #ffd180;
+}
+
+.footer-navigation a:hover,
+.footer-navigation a:focus,
+.footer-sectons-list a:hover,
+.footer-sectons-list a:focus {
+  text-decoration: underline;
+}
+
+.footer-navigation a:active,
+.footer-sectons-list a:active {
+  text-decoration: none;
+  opacity: 0.5;
+}
+
+.footer-copyrights-container {
+  font-size: 16px;
+  line-height: 18px;
+  color: #ffffff;
+
+  background-color: #293449;
+}
+
+.footer-feedback-link a,
+.footer-developers a {
+  color: #ffd180;
+}
+
+.footer-feedback-link a:hover,
+.footer-feedback-link a:focus,
+.footer-developers a:hover,
+.footer-developers a:focus {
+  text-decoration: underline;
+}
+
+.footer-feedback-link a:active,
+.footer-developers a:active {
+  text-decoration: none;
+  color: #ee3643;
+}
+
+.footer-social {
+  list-style: none;
+}
+
+.social-button {
+  color: #ffffff;
+}
