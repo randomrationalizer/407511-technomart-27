@@ -215,14 +215,145 @@ a {
   background-color: #ba2732;
 }
 
-.services {
+.page-title {
+  font-family: "Cuprum", "Arial", sans-serif;
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: 400;
+  text-transform: uppercase;
+
+  color: #32425c;
+}
+
+.subtitle {
+  color: #000000;
+}
+
+.inner-page .page-title {
   background-color: #f4f7f9;
 }
 
-.services h2 {
-  font-size: 30px;
+.promo-list {
+  list-style: none;
+}
+
+.promo-item {
+  font-size: 24px;
   line-height: 30px;
+  color: #ffffff;
+}
+
+.promo-button {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.promo-button:hover,
+.promo-button:focus {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.promo-button:active {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.promo-matherials {
+  background-color: #ffbf47;
+}
+
+.promo-tools {
+  background-color: #3bbce3;
+}
+
+.promo-equipment {
+  background-color: #dc91d8;
+}
+
+.promo-sale {
+  background-color: #8ed78f;
+}
+
+.promo-delivery {
+  background-color: #ffc047;
+}
+
+.promo-slider {
+  list-style: none;
+}
+
+.promo-slide {
+  display: none;
+
+  color: #ffffff;
+}
+
+.promo-slide h3 {
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 700;
   text-transform: uppercase;
+}
+
+.promo-slide p {
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.promo-slide.perforators {
+  background-color: #6e6b68;
+  background-image: url("../img/slider-perforator.jpg");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-size: auto auto;
+}
+
+.promo-slide.drills {
+  background-color: #6e6b68;
+  background-image: url("../img/slider-drill.jpg");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-size: auto auto;
+}
+
+.slide-active {
+  display: block;
+}
+
+.popular-goods .wrapper {
+  background-color: #f9f5f0;
+}
+
+.popular-goods-list {
+  list-style: none;
+}
+
+.popular-brands .wrapper {
+  background-color: #f9f5f0;
+}
+
+.popular-brands-list {
+  list-style: none;
+}
+
+.popular-brands-item {
+  border: solid 1px #e5e5e5;
+}
+
+.popular-brands-item:hover,
+.popular-brands-item:focus {
+  border: none;
+  box-shadow: 0px 10px 25px 0 rgba(41, 52, 73, 0.5);
+}
+
+.popular-brands-item:active {
+  box-shadow: 0px 4px 10px 0 rgba(41, 52, 73, 0.5);
+}
+
+.popular-brands-item:active img {
+  opacity: 0.3;
+}
+
+.services {
+  background-color: #f4f7f9;
 }
 
 .services .slider-buttons,
@@ -255,6 +386,7 @@ a {
 .services-slide h3 {
   font-size: 36px;
   line-height: 36px;
+  font-weight: 400;
   text-transform: uppercase;
   color: #32425c;
 }
@@ -264,10 +396,33 @@ a {
   font-family: "PT Sans", "Arial", sans-serif;
 }
 
-.index-columns h2 {
-  font-size: 30px;
-  line-height: 30px;
-  text-transform: uppercase;
+.services-slide {
+  display: none;
+}
+
+.services-slide.slide-active {
+  display: block;
+}
+
+.services-slide.delivery {
+  background-image: url("../img/services-delivery.png");
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.services-slide.guarantee {
+  background-image: url("../img/services-guarantee.png");
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.services-slide.credit {
+  background-image: url("../img/services-credit.png");
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .index-columns p {
@@ -279,15 +434,6 @@ a {
   line-height: 20px;
 
   list-style: none;
-}
-
-.page-title {
-  font-size: 30px;
-  line-height: 30px;
-  text-transform: uppercase;
-
-  color: #32425c;
-  background-color: #f4f7f9;
 }
 
 .breadcrumbs {
@@ -508,6 +654,55 @@ a {
 
 .in-favorites-button:active {
   opacity: 0.3;
+}
+
+.pagination-list {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  text-transform: uppercase;
+
+  list-style: none;
+}
+
+.pagination-item a {
+  color: #000000;
+
+  background-color: transparent;
+  border: 1px solid #e5e5e5;
+  border-radius: 1px;
+}
+
+.pagination-item a:hover,
+.pagination-item a:focus {
+  border-color: #bdc6ca;
+}
+
+.pagination-item a:active {
+  border-color: #ee3643;
+}
+
+.pagination-item-current a {
+  color: #ffffff;
+
+  background-color: #ee3643;
+  border-color: #ee3643;
+}
+
+.pagination-item-current a:hover,
+.pagination-item-current a:focus,
+.pagination-item-current a:active {
+  color: #ffffff;
+
+  background-color: #ee3643;
+  border-color: #ee3643;
+}
+
+.category-description {
+  font-size: 13px;
+  line-height: 24px;
+
+  background-color: #f4f7f9;
 }
 
 .main-footer {
