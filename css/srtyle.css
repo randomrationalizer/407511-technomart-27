@@ -21,6 +21,10 @@ body {
   background-color: #ffffff;
 }
 
+img {
+  max-width: 100%;
+}
+
 a {
   text-decoration: none;
 }
@@ -41,28 +45,113 @@ a {
 }
 
 .main-header {
+  width: 100%;
+  margin-bottom: 59px;
+  padding-bottom: 60px;
+
   background-color: #f4f7f9;
 }
 
-.site-navigation,
+.main-navigation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.site-functions-wrapper {
+  width: 100%;
+  height: 42px;
+  margin-bottom: 46px;
+
+  background-color: #293449;
+}
+
+.container {
+  width: 940px;
+  margin: 0 auto;
+}
+
+.site-functions-wrapper .container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.logo {
+  display: block;
+  width: 220px;
+  height: 47px;
+  padding: 13px 56px 15px 55px;
+
+  background-color: #ee3643;
+  box-shadow: inset 0px -5px 0 0 rgba(0, 0, 0, 0.24);
+}
+
+.logo:hover,
+.logo:focus {
+  background-color: #ca2c37;
+}
+
+.logo:active {
+  background-color: #ba2732;
+}
+
+.user-navigation-wrapper {
+  display: flex;
+  align-items: baseline;
+  width: 940px;
+  padding-left: 52px;
+  margin-bottom: 44px;
+}
+
 .user-navigation {
+  display: flex;
+  justify-content: space-between;
+  width: 280px;
+  margin: 0;
+  padding:0;
+
   list-style: none;
 }
 
 .site-navigation {
+  display: flex;
+  justify-content: space-between;
+  order: 3; 
+  width: 940px;
+  margin: 0;
+  padding: 0 25px 0 22px;
+
   font-size: 17px;
   line-height: 17px;
   color: #ffffff;
+  list-style: none;
 
   background-color: #32425c;
+  box-shadow: inset 0px -5px 0 0 #293449;
 }
 
 .site-functions {
+  display: flex;
+  align-items: baseline;
+  flex-grow: 1;
+
   font-size: 17px;
   line-height: 18px;
   color: #ffffff;
 
   background-color: #293449;
+}
+
+.site-functions a {
+  display: block;
+  width: 150px;
+  padding: 12px 22px 12px 20px;
+}
+
+.site-navigation a {
+  display: block;
+  padding: 22px 30px;
 }
 
 .site-navigation a,
@@ -105,6 +194,10 @@ a {
   color: rgba(255, 255, 255, 0.5);
 
   background-color: #518534;
+}
+
+.site-search {
+  width: 260px;
 }
 
 .site-search input {
@@ -174,19 +267,32 @@ a {
 }
 
 .main-header-message {
+  width: 200px;
+  margin: 0;
+  padding: 0;
+
   font-size: 16px;
   line-height: 23px;
   font-style: italic;
   color: #ee3643;
 }
 
+.main-header-contacts {
+  width: 270px;
+  margin: 0 auto;
+}
+
 .main-header-contacts .phone {
+  margin: 0;
+
   font-size: 21px;
   line-height: 21px;
   color: #ee3643;
 }
 
 .main-header-contacts .address {
+  margin: 0;
+
   font-size: 14px;
   line-height: 24px;
   color: #32425c;
@@ -216,6 +322,8 @@ a {
 }
 
 .page-title {
+  margin: 0;
+  
   font-family: "Cuprum", "Arial", sans-serif;
   font-size: 30px;
   line-height: 30px;
@@ -233,14 +341,42 @@ a {
   background-color: #f4f7f9;
 }
 
+.promo {
+  margin-bottom: 53px;
+}
+
 .promo-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  margin: 0;
+  padding: 0;
+  min-height: 409px;
+
   list-style: none;
 }
 
 .promo-item {
+  width: 300px;
+  height: 123px;
+
   font-size: 24px;
   line-height: 30px;
   color: #ffffff;
+}
+
+.promo-item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.promo-item.promo-delivery {
+  margin-left: auto;
+}
+
+.promo-item.slider {
+  width: 620px;
 }
 
 .promo-button {
@@ -277,16 +413,23 @@ a {
 }
 
 .promo-slider {
+  margin: 0;
+  padding: 0;
+
   list-style: none;
 }
 
 .promo-slide {
   display: none;
+  height: 266px;
 
   color: #ffffff;
 }
 
 .promo-slide h3 {
+  margin: 0;
+  padding: 0;
+  
   font-size: 36px;
   line-height: 36px;
   font-weight: 700;
@@ -318,24 +461,52 @@ a {
   display: block;
 }
 
-.popular-goods .wrapper {
+.heading-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+
   background-color: #f9f5f0;
+}
+
+.popular-goods {
+  margin-bottom: 21px;
 }
 
 .popular-goods-list {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+
   list-style: none;
 }
 
-.popular-brands .wrapper {
-  background-color: #f9f5f0;
+.popular-brands {
+  margin-bottom: 65px;
 }
 
 .popular-brands-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+
   list-style: none;
 }
 
 .popular-brands-item {
+  width: 220px;
+  height: 145px;
+  
   border: solid 1px #e5e5e5;
+}
+
+.popular-brands-item:not(:nth-child(4n)) {
+  margin-right: 20px;
+  margin-bottom: 20px;
+
 }
 
 .popular-brands-item:hover,
@@ -353,20 +524,38 @@ a {
 }
 
 .services {
+  width: 100%;
+  padding-top: 65px;
+  padding-bottom: 51px;
+
   background-color: #f4f7f9;
+}
+
+.services-slider {
+  display: flex;
+  justify-content: space-between;
 }
 
 .services .slider-buttons,
 .services .slides-list {
+  margin: 0;
+  padding:0;
+
   list-style: none;
 }
 
 .services-slider .slider-button {
+  width: 240px;
+
   font-size: 21px;
   line-height: 30px;
   color: #ffffff;
 
   background-color: #32425c;
+}
+
+.services-slider .slides-list {
+  width: 620px;
 }
 
 .services-slider .slider-button:hover,
@@ -425,8 +614,28 @@ a {
   background-size: contain;
 }
 
+.index-columns {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 80px;
+  padding-bottom: 13px;
+}
+
+.about-us {
+  width: 540px;
+}
+
+.contacts {
+  width: 300px;
+}
+
 .index-columns p {
   font-family: "PT Sans", "Arial", sans-serif;
+}
+
+.index-columns h2 {
+  margin: 0;
+  padding: 0;
 }
 
 .about-us .transport-companies {
@@ -576,6 +785,9 @@ a {
 }
 
 .catalog-item {
+  width: 220px;
+  height: 318px;
+
   border: 1px solid #e5e5e5;
 }
 
@@ -706,6 +918,8 @@ a {
 }
 
 .main-footer {
+  margin-top: 70px;
+
   font-size: 18px;
   line-height: 24px;
   color: #f1f5f7;
@@ -713,14 +927,60 @@ a {
   background-color: #32425c;
 }
 
+.footer-navigation-wrapper {
+  width: 100%;
+}
+
+.footer-navigation-wrapper .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-wrap: wrap;
+  padding-bottom: 53px;
+}
+
+.footer-logo {
+  order: 1;
+  height: 68px;
+  padding: 20px 41px 25px 41px;
+  margin: 0;
+}
+
+.footer-logo img {
+  margin: auto;
+}
+
+
 .footer-contacts {
+  order: 3;
+  width: 330px;
+  margin: 0;
+  margin-top: 30px;
+
   color: #f3f7f9;
 }
 
 .footer-navigation,
 .footer-sectons-list,
 .footer-social {
+  margin: 0;
+  padding: 0;
+
   list-style: none;
+}
+
+.footer-navigation {
+  order: 2;
+  display: flex;
+  justify-content: space-between;
+  width: 550px;
+}
+
+.footer-sectons-list {
+  order: 4;
+  display: flex;
+  justify-content: space-between;
+  width: 530px;
 }
 
 .footer-navigation a {
@@ -744,12 +1004,38 @@ a {
   opacity: 0.5;
 }
 
-.footer-copyrights-container {
+.footer-copyrights-wrapper {
+  width: 100%;
+
   font-size: 16px;
   line-height: 18px;
   color: #ffffff;
 
   background-color: #293449;
+}
+
+.footer-copyrights-wrapper .container {
+  display: flex;
+  align-items: center;
+  padding: 35px 0 30px 0;
+}
+
+.footer-copyright {
+  width: 230px;
+  margin: 0;
+  margin-right: 150px;
+}
+
+.footer-feedback-link {
+  width: 160px;
+  margin: 0;
+  margin-left: auto;
+}
+
+.footer-developers {
+  width: 130px;
+  margin: 0;
+  margin-left: 30px;
 }
 
 .footer-feedback-link a,
@@ -771,6 +1057,11 @@ a {
 }
 
 .footer-social {
+  display: flex;
+  width: 160px;
+  margin: 0;
+  padding: 0;
+
   list-style: none;
 }
 
