@@ -108,9 +108,41 @@ a {
   display: flex;
   justify-content: space-between;
   width: 280px;
+  margin-left: auto;
+}
+
+.user-navigation .login-link {
+  width: 121px;
+  padding: 12px 27px 12px 48px;
+}
+
+.user-navigation .registration-link {
+  width: 150px;
+  padding: 12px 25px 12px 25px;
+}
+
+.user-navigation.logged-in {
+  width: 300px;
+  flex-direction: column;
+}
+
+.user-navigation-profile {
+  display: flex;
+  align-items: baseline;
+  margin-bottom: 10px;
+}
+
+.user-navigation-links {
+  display: flex;
   margin: 0;
   padding:0;
+}
 
+.user-navigation-links li {
+  margin: 0 15px;
+}
+
+.user-navigation-links li:first-child {
   list-style: none;
 }
 
@@ -240,6 +272,10 @@ a {
 }
 
 .user-navigation .user-name {
+  width: 240px;
+  margin: 0;
+  padding: 13px 13px 11px 13px;
+
   font-size: 21px;
   line-height: 21px;
   color: #000000;
@@ -247,12 +283,15 @@ a {
   background-color: #ffffff;
 }
 
+.user-navigation .logout-link {
+  width: 60px;
+}
+
 .user-navigation .user-name:active {
   color: rgba(0, 0, 0, 0.3);
 }
 
-.user-navigation .user-orders-link,
-.user-navigation .user-profile-link {
+.user-navigation-links a {
   font-size: 16px;
   line-height: 18px;
   color: #32425c;
@@ -261,8 +300,7 @@ a {
   background-color: transparent;
 }
 
-.user-navigation .user-orders-link:active,
-.user-navigation .user-profile-link:active {
+.user-navigation-links a:active {
   color: rgba(50, 66, 92, 0.3);
 }
 
@@ -270,6 +308,7 @@ a {
   width: 200px;
   margin: 0;
   padding: 0;
+  margin-right: 70px;
 
   font-size: 16px;
   line-height: 23px;
@@ -279,7 +318,7 @@ a {
 
 .main-header-contacts {
   width: 270px;
-  margin: 0 auto;
+  margin: 0;
 }
 
 .main-header-contacts .phone {
@@ -337,7 +376,11 @@ a {
   color: #000000;
 }
 
-.inner-page .page-title {
+.main-heading {
+  margin: 0;
+  margin-bottom: 20px;
+  padding: 29px 30px 30px 30px;
+
   background-color: #f4f7f9;
 }
 
@@ -645,14 +688,24 @@ a {
   list-style: none;
 }
 
+.inner-page .main-header {
+  margin-bottom: 20px;
+}
+
 .breadcrumbs {
+  display: flex;
+  margin: 0;
+  margin-bottom: 20px;
+  padding: 0;
+
   font-family: "PT Sans", "Arial", sans-serif;
   text-transform: uppercase;
-
   list-style: none;
 }
 
 .breadcrumbs a {
+  margin-right: 15px;
+
   color: #000000;
 }
 
@@ -671,7 +724,20 @@ a {
   color: #000000;
 }
 
+.catalog-columns {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 60px;
+}
+
+.catalog-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
 .catalog-filter {
+  width: 220px;
+
   font-family: "PT Sans", "Arial", sans-serif;
   text-transform: uppercase;
 }
@@ -736,6 +802,13 @@ a {
 }
 
 .sort {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 700px;
+  padding: 10px 17px 10px 19px;
+  margin-bottom: 21px;
+
   font-family: "PT Sans", "Arial", sans-serif;
   text-transform: uppercase;
 
@@ -744,11 +817,31 @@ a {
 
 .sort-type,
 .sort-value {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+
   font-size: 13px;
   line-height: 18px;
   text-transform: uppercase;
-
   list-style: none;
+}
+
+.sort h2 {
+  margin: 0;
+  padding: 0;
+  margin-right: auto;
+}
+
+.sort-type {
+  width: 380px;
+}
+
+.sort-value {
+  width: 60px;
+
+  font-size: 0;
 }
 
 .sort-type a,
@@ -779,7 +872,17 @@ a {
   border: none;
 }
 
+.catalog {
+  width: 700px;
+}
+
 .catalog-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding:0;
+  margin-bottom: 32px;
+
   font-family: "PT Sans", "Arial", sans-serif;
   list-style: none;
 }
@@ -789,6 +892,15 @@ a {
   height: 318px;
 
   border: 1px solid #e5e5e5;
+}
+
+.catalog-list li {
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.catalog-list li:nth-child(3n) {
+  margin-right: 0;
 }
 
 .catalog-item a {
@@ -869,15 +981,24 @@ a {
 }
 
 .pagination-list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 13px;
   line-height: 18px;
   text-transform: uppercase;
-
   list-style: none;
 }
 
+.pagination-item {
+  margin-right: 10px;
+}
+
 .pagination-item a {
+  padding: 10px 15px;
+
   color: #000000;
 
   background-color: transparent;
@@ -911,6 +1032,10 @@ a {
 }
 
 .category-description {
+  width: 100%;
+  margin: 0;
+  padding: 60px 0 70px 0;
+
   font-size: 13px;
   line-height: 24px;
 
@@ -925,6 +1050,10 @@ a {
   color: #f1f5f7;
 
   background-color: #32425c;
+}
+
+.inner-page .main-footer {
+  margin-top: 0;
 }
 
 .footer-navigation-wrapper {

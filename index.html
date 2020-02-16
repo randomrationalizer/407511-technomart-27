@@ -47,16 +47,20 @@
             <p class="phone">+7 (812) 555-05-55</p>
             <p class="address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
           </div>
-          <ul class="user-navigation logged-out">
-            <li><a class="login-link" href="">Войти</a></li>
-            <li><a class="registration-link" href="">Регистрация</a></li>
-          </ul>
-          <ul class="user-navigation logged-in visually-hidden">
-            <li><p class="user-name">Равшан Джамшутович</p></li>
-            <li><a class="logout-link" href="">Выйти</a></li>
-            <li><a class="user-orders-link" href="">Мои заказы</a></li>
-            <li><a class="user-profile-link" href="">Личный кабинет</a></li>
-          </ul>
+          <div class="user-navigation logged-out">
+            <a class="login-link" href="">Войти</a>
+            <a class="registration-link" href="">Регистрация</a>
+          </div>
+          <div class="user-navigation logged-in visually-hidden">
+            <div class="user-navigation-profile">
+              <p class="user-name">Равшан Джамшутович</p>
+              <a class="logout-link" href="">Выйти</a>
+            </div>
+            <ul class="user-navigation-links">
+              <li><a class="user-orders-link" href="">Мои заказы</a></li>
+              <li><a class="user-profile-link" href="">Личный кабинет</a></li>
+            </ul>
+          </div>
         </div>
       </nav>
     </header>
