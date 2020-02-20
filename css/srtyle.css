@@ -68,7 +68,6 @@ input[type="radio"].visually-hidden {
 
 .site-functions {
   width: 100%;
-  height: 42px;
   margin-bottom: 46px;
 
   font-size: 17px;
@@ -86,18 +85,18 @@ input[type="radio"].visually-hidden {
 .site-functions .container {
   display: flex;
   justify-content: flex-start;
-  align-items: flex-start;
+  align-items: stretch;
   flex-wrap: wrap;
 }
 
 .logo {
   display: block;
   width: 220px;
-  height: 47px;
-  padding: 13px 56px 15px 55px;
+  height: 42px;
+  padding: 11px 56px 13px 55px;
 
   background-color: #ee3643;
-  box-shadow: inset 0px -5px 0 0 rgba(0, 0, 0, 0.24);
+  box-shadow: 0px 5px 0 0 #b52933;
 }
 
 .logo:hover,
@@ -156,7 +155,6 @@ input[type="radio"].visually-hidden {
   flex-grow: 1;
   width: 260px;
   height: 100%;
-
 }
 
 .search-input {
@@ -480,6 +478,9 @@ input[type="radio"].visually-hidden {
 }
 
 .button {
+  /* display: inline-block;
+  padding: 10px 40px; */
+  
   font-family: "Cuprum", "Arial", sans-serif;
   font-size: 14px;
   line-height: 18px;
@@ -1212,15 +1213,10 @@ input[type="radio"].visually-hidden {
 
 .footer-logo {
   order: 1;
-  height: 68px;
-  padding: 20px 41px 25px 41px;
+  height: 63px;
+  padding: 20px 41px 20px 41px;
   margin: 0;
 }
-
-.footer-logo img {
-  margin: auto;
-}
-
 
 .footer-contacts {
   order: 3;
