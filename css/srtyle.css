@@ -142,8 +142,72 @@ input[type="radio"].visually-hidden {
   background-color: #518534;
 }
 
+.cart-link {
+  position: relative;
+
+  padding-left: 50px;
+}
+
+.cart-link::before {
+  position: absolute;
+  content: "";
+
+  top: 12px;
+  left: 18px;
+
+  width: 15px;
+  height: 15px;
+
+  background-image: url("../img/icon-cart.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  opacity: 0.3;
+}
+
+.cart-link:hover::before,
+.cart-link:focus::before {
+  opacity: 1;
+
+}
+
+.cart-link:active::before {
+  opacity: 0.5;
+}
+
 .cart-link.cart-not-empty {
   background-color: #ee3643;
+}
+
+.favorites-link {
+  position: relative;
+
+  padding-left: 44px;
+}
+
+.favorites-link::before {
+  position: absolute;
+  content: "";
+
+  top: 12px;
+  left: 17px;
+
+  width: 14px;
+  height: 16px;
+
+  background-image: url("../img/icon-bookmark.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  opacity: 0.3;
+}
+
+.favorites-link:hover::before,
+.favorites-link:focus::before {
+  opacity: 1;
+
+}
+
+.favorites-link:active::before {
+  opacity: 0.5;
 }
 
 .site-search {
