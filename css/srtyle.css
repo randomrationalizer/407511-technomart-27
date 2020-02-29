@@ -555,7 +555,7 @@ input[type="radio"].visually-hidden {
 
   background-color: #ee3643;
   border: none;
-  border-radius: 1px;
+  border-radius: 2px;
 }
 
 .button:hover,
@@ -716,8 +716,13 @@ input[type="radio"].visually-hidden {
   justify-content: space-between;
   align-items: center;
   margin-bottom: 20px;
+  padding: 25px 24px 26px 30px;
 
   background-color: #f9f5f0;
+}
+
+.heading-wrapper .button {
+  width: 253px;
 }
 
 .popular-goods {
@@ -747,16 +752,22 @@ input[type="radio"].visually-hidden {
 }
 
 .popular-brands-item {
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.popular-brands-item a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 220px;
   height: 145px;
-  
+
   border: solid 1px #e5e5e5;
 }
 
-.popular-brands-item:not(:nth-child(4n)) {
-  margin-right: 20px;
-  margin-bottom: 20px;
-
+.popular-brands-item:nth-child(4n) {
+  margin-right: 0;
 }
 
 .popular-brands-item:hover,
