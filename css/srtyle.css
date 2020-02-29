@@ -948,32 +948,94 @@ input[type="radio"].visually-hidden {
 .index-columns {
   display: flex;
   justify-content: space-between;
-  padding-top: 80px;
-  padding-bottom: 13px;
+  align-items: stretch;
+  padding-top: 77px;
+  padding-bottom: 16px;
 }
 
-.about-us {
-  width: 540px;
-}
-
-.contacts {
-  width: 300px;
+.index-columns .subtitle {
+  margin-bottom: 28px;
 }
 
 .index-columns p {
+  margin: 0;
+
   font-family: "PT Sans", "Arial", sans-serif;
 }
 
-.index-columns h2 {
-  margin: 0;
-  padding: 0;
+.about-us {
+  display: flex;
+  flex-direction: column;
+  width: 540px;
 }
 
-.about-us .transport-companies {
+.about-us p {
+  margin-bottom: 24px;
+}
+
+.delivery-info p {
+  margin-bottom: 21px;
+}
+
+.transport-companies-list {
+  margin: 0;
+  padding: 0;
+
   font-size: 18px;
   line-height: 20px;
 
   list-style: none;
+}
+
+.transport-company-item {
+  position: relative;
+
+  margin-bottom: 20px;
+  padding-left: 36px;
+}
+
+.transport-company-item:last-child {
+  margin-bottom: 35px;
+}
+
+.transport-company-item::before {
+  content: "";
+
+  position: absolute;
+  top: 9px;
+  left: 0;
+
+  width: 25px;
+  height: 2px;
+
+  background-color: #ee3643;
+}
+
+.about-us .button {
+  width: 220px;
+  margin-top: auto;
+}
+
+.contacts {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+}
+
+.contacts p {
+  margin: 0;
+  margin-bottom: 30px;
+}
+
+.map {
+  width: 300px;
+  height: 158px;
+
+  background-color: #eeeae3;
+}
+
+.contacts .button {
+  margin-top: auto;
 }
 
 .inner-page .main-header {
