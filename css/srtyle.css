@@ -622,9 +622,8 @@ input[type="radio"].visually-hidden {
 .promo-item {
   width: 300px;
   height: 123px;
+  padding: 22px;
 
-  font-size: 24px;
-  line-height: 30px;
   color: #ffffff;
 }
 
@@ -636,11 +635,20 @@ input[type="radio"].visually-hidden {
   margin-left: auto;
 }
 
-.promo-item.slider {
-  width: 620px;
+.promo-title {
+  margin: 0;
+  margin-bottom: 11px;
+
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 700;
 }
 
 .promo-button {
+  width: 135px;
+  margin-left: 3px;
+  padding: 10px 20px;
+
   background-color: rgba(0, 0, 0, 0.1);
 }
 
@@ -655,22 +663,43 @@ input[type="radio"].visually-hidden {
 
 .promo-matherials {
   background-color: #ffbf47;
+  background-image: url("../img/icon-matherials.svg");
+  background-repeat: no-repeat;
+  background-position: right 43px top 31px;
 }
 
 .promo-tools {
   background-color: #3bbce3;
+  background-image: url("../img/icon-tools.svg");
+  background-repeat: no-repeat;
+  background-position: right 28px top 33px;
 }
 
 .promo-equipment {
   background-color: #dc91d8;
+  background-image: url("../img/icon-equipment.svg");
+  background-repeat: no-repeat;
+  background-position: right 31px top 31px;
 }
 
 .promo-sale {
   background-color: #8ed78f;
+  background-image: url("../img/icon-sale.svg");
+  background-repeat: no-repeat;
+  background-position: right 45px top 26px;
 }
 
 .promo-delivery {
   background-color: #ffc047;
+  background-image: url("../img/icon-shipping.svg");
+  background-repeat: no-repeat;
+  background-position: right 31px top 32px;
+}
+
+.promo-item.slider {
+  position: relative;
+  width: 620px;
+  padding: 0;
 }
 
 .promo-slider {
@@ -680,16 +709,71 @@ input[type="radio"].visually-hidden {
   list-style: none;
 }
 
+.promo-slider-button {
+  position: absolute;
+  top: 114px;
+
+  display: block;
+  width: 44px;
+  height: 40px;
+  margin: 0;
+  padding: 0;
+
+  background-color: transparent;
+  border: none;
+
+  cursor: pointer;
+}
+
+.promo-slider-button:hover,
+.promo-slider-button:focus {
+  opacity: 0.7;
+}
+
+.promo-slider-button:active{
+  opacity: 0.1;
+}
+
+.slider-button-back {
+  left: 14px;
+
+  background-image: url("../img/icon-left.svg");
+  background-repeat: no-repeat;
+  background-position: 11px 0;
+  background-size: 22px 40px;
+}
+
+.slider-button-next {
+  right: 9px;
+
+  background-image: url("../img/icon-right.svg");
+  background-repeat: no-repeat;
+  background-position: 11px 0;
+  background-size: 22px 40px;
+}
+
 .promo-slide {
   display: none;
-  height: 266px;
+  min-height: 266px;
+  padding: 22px 24px;
 
   color: #ffffff;
 }
 
-.promo-slide p {
+.promo-slide .slide-title {
+  margin-bottom: 4px;
+}
+
+.promo-slide-description {
+  margin: 0;
+
   font-size: 18px;
   line-height: 24px;
+}
+
+.promo-slide .button {
+  width: 195px;
+  margin-top: auto;
 }
 
 .promo-slide.perforators {
@@ -708,8 +792,9 @@ input[type="radio"].visually-hidden {
   background-size: auto auto;
 }
 
-.slide-active {
-  display: block;
+.promo-slide.slide-active {
+  display: flex;
+  flex-direction: column;
 }
 
 .heading-wrapper {
