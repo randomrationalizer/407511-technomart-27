@@ -1804,12 +1804,11 @@ margin-right: 0;
   left: 50%;
 
   width: 620px;
-  padding-bottom: 112px;
 
   font-size: 18px;
   line-height: 18px;
 
-  background-color: #f4f4f4;
+  background-color: #ffffff;
   border-top: 7px solid #ff5257;
   transform: translate(-50%, -50%);
   box-shadow: 0px 20px 40px 0 rgba(0, 0, 0, 0.75);
@@ -1819,73 +1818,22 @@ margin-right: 0;
   display: block;
 }
 
-.modal.modal-map {
+.modal-map {
   width: 940px;
   height: 446px;
-  padding: 0;
 
   border: 0;
 }
 
-.write-us-form {
-  position: relative;
-}
-
 .modal-container {
   padding: 55px 80px 15px;
-  background-color: #ffffff;
 }
 
-.modal-form-wrapper {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
-.modal-form-item {
-  margin: 0;
-  margin-bottom: 22px;
-}
-
-.modal-form-item label {
-  display: block;
-  margin: 0;
-  margin-bottom: 9px;
-}
-
-.modal-form-input {
-  display: block;
-  width: 220px;
-  margin: 0;
-  padding: 10px;
-
-  font-size: 13px;
-
-  border: 2px solid #dee3e4;
-  border-radius: 2px;
-}
-
-.modal-form-input:hover {
-  border-color: #b5b5b5;
-}
-
-.modal-form-input:focus,
-.modal-form-input:active {
-  outline: none;
-  border-color: #ee3643;
-
-}
-
-.modal-form-input.modal-form-message {
+.modal .modal-buttons-wrapper {
   width: 100%;
-}
+  padding: 37px 80px;
 
-.write-us-form .button {
-  position: absolute;
-  bottom: -75px;
-  left: 80px;
-
-  width: 460px;
+  background-color:#f4f4f4;
 }
 
 .modal-close {
@@ -1895,9 +1843,7 @@ margin-right: 0;
 
   width: 21px;
   height: 21px;
-
-  font-size: 0;
-
+  
   background-color: transparent;
   border: 0;
 
@@ -1927,8 +1873,56 @@ margin-right: 0;
   opacity: 0.3;
 }
 
-.modal-add-to-cart {
-  padding-bottom: 0;
+.feedback-form-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.feedback-form-item {
+  margin: 0;
+  margin-bottom: 22px;
+}
+
+.feedback-form-item label {
+  display: block;
+  margin: 0;
+  margin-bottom: 9px;
+}
+
+.feedback-form-input {
+  display: block;
+  width: 220px;
+  margin: 0;
+  padding: 10px;
+
+  font: inherit;
+  font-size: 13px;
+
+  border: 2px solid #dee3e4;
+  border-radius: 2px;
+}
+
+.feedback-form-input:hover {
+  border-color: #b5b5b5;
+}
+
+.feedback-form-input:focus,
+.feedback-form-input:active {
+  outline: none;
+  border-color: #ee3643;
+}
+
+.feedback-form-message {
+  width: 100%;
+}
+
+.feedback-form .button {
+  width: 100%;
+}
+
+.modal-add-to-cart .modal-container {
+  padding-bottom: 49px;
 }
 
 .modal-add-to-cart .message {
@@ -1955,15 +1949,9 @@ margin-right: 0;
   background-position: 0 0;
 }
 
-.modal-container {
-  padding-bottom: 49px;
-}
-
-.modal-add-to-cart .buttons-wrapper {
+.modal-add-to-cart .modal-buttons-wrapper {
   display: flex;
   justify-content: space-between;
-
-  padding: 37px 80px;
 }
 
 .modal-add-to-cart .button {
