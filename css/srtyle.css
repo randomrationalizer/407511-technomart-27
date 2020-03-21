@@ -620,6 +620,8 @@ input[type="radio"].visually-hidden {
 }
 
 .promo-item {
+  position: relative;
+  
   width: 300px;
   height: 123px;
   padding: 22px;
@@ -633,6 +635,21 @@ input[type="radio"].visually-hidden {
 
 .promo-item.promo-delivery {
   margin-left: auto;
+}
+
+.flag-new::after {
+  content: "";
+  position: absolute;
+
+  top: 0;
+  right: 0;
+
+  width: 60px;
+  height: 59px;
+
+  background-image: url("../img/flag-new.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }
 
 .promo-title {
@@ -1551,6 +1568,7 @@ input[type="radio"].visually-hidden {
 }
 
 .catalog-item {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -1560,6 +1578,11 @@ input[type="radio"].visually-hidden {
   min-height: 318px;
 
   border: 1px solid #e5e5e5;
+}
+
+.catalog-item.flag-new::after {
+  top: -1px;
+  right: -1px;
 }
 
 .catalog-list li {
