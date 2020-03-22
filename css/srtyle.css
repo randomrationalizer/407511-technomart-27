@@ -1825,10 +1825,11 @@ margin-right: 0;
 .modal {
   display: none;
   position: fixed;
-  top: 140px;
+  top: 50%;
   left: 50%;
 
   width: 620px;
+  margin-top: -240px;
   margin-left: -310px;
 
   font-size: 18px;
@@ -1897,6 +1898,20 @@ margin-right: 0;
   border: 0;
 }
 
+.modal-map iframe {
+  position: relative;
+  z-index: 2;
+
+  border: none;
+}
+
+.map-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
 .modal-container {
   padding: 55px 80px 15px;
 }
@@ -1912,6 +1927,7 @@ margin-right: 0;
   position: absolute;
   top: 9px;
   right: 9px;
+  z-index: 3;
 
   width: 21px;
   height: 21px;
