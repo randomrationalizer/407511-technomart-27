@@ -1825,27 +1825,74 @@ margin-right: 0;
 .modal {
   display: none;
   position: fixed;
-  top: 50%;
+  top: 140px;
   left: 50%;
 
   width: 620px;
+  margin-left: -310px;
 
   font-size: 18px;
   line-height: 18px;
 
   background-color: #ffffff;
   border-top: 7px solid #ff5257;
-  transform: translate(-50%, -50%);
   box-shadow: 0px 20px 40px 0 rgba(0, 0, 0, 0.75);
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(-2000px);
+  }
+
+  70% {
+    transform: translateY(30px);
+  }
+
+  90% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
 }
 
 .modal-show {
   display: block;
+
+  animation: bounce 0.6s;
+}
+
+.modal-error {
+  animation: shake 0.6s;
 }
 
 .modal-map {
   width: 940px;
   height: 446px;
+  margin-left: -470px;
 
   border: 0;
 }
@@ -1946,11 +1993,11 @@ margin-right: 0;
   width: 100%;
 }
 
-.modal-add-to-cart .modal-container {
+.modal-add-in-cart .modal-container {
   padding-bottom: 49px;
 }
 
-.modal-add-to-cart .message {
+.modal-add-in-cart .message {
   position: relative;
   margin: 0;
   padding-left: 100px;
@@ -1960,7 +2007,7 @@ margin-right: 0;
   font-weight: 400;
 }
 
-.modal-add-to-cart .message::before {
+.modal-add-in-cart .message::before {
   content: "";
   position: absolute;
   top: -16px;
@@ -1969,22 +2016,22 @@ margin-right: 0;
   width: 66px;
   height: 66px;
 
-  background-image: url("../img/modal-add-to-cart-icon.svg");
+  background-image: url("../img/add-in-cart-icon.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
 }
 
-.modal-add-to-cart .modal-buttons-wrapper {
+.modal-add-in-cart .modal-buttons-wrapper {
   display: flex;
   justify-content: space-between;
 }
 
-.modal-add-to-cart .button {
+.modal-add-in-cart .button {
   width: 220px;
   padding: 11px 35px 9px;
 }
 
-.modal-add-to-cart .continue-shopping-btn {
+.modal-add-in-cart .continue-shopping-btn {
   padding: 10px 35px 8px;
 
   color: #000000;
